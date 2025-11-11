@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ToDoApp {
     private static final String FILE_NAME = "tasks.txt";
-    private static List<String> tasks = new  ArrayList<>();
+    private static final List<String> tasks = new  ArrayList<>();
 
     private static void loadTasks() {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))){
